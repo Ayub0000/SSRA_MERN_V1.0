@@ -1,13 +1,13 @@
 const express = require('express');
 
-const path = require('path ')
+const path = require('path')
 
 const app = express();
 
-app.use(express.static(path.join(__dirname + "public ")))
+app.use(express.static(path.join(__dirname + "/public")))
 
-const PORT = process.env.PORT ||  5000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
-    console.log('app is listning on port 3000'); 
+    console.log(`server is running on port ${PORT}`)
 })
